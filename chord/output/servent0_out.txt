@@ -1,0 +1,36 @@
+10:30:39 - Starting servent [28|localhost|1100]
+10:30:39 - Pausing for 20000 ms
+10:30:39 - First node in Chord system.
+10:30:50 - Got message [48|1200|0||NEW_NODE|1100|28]
+10:30:50 - HEFE gde si bre
+10:30:51 - Sending message [28|1100|0||WELCOME|1200|48]
+10:30:52 - Got message [48|1200|1||UPDATE|1100|28]
+10:30:53 - Sending message [48|1200|1|1100|UPDATE|1200|48]
+10:30:59 - Predecessor chord id: 48
+10:30:59 - My chord id: 28
+10:30:59 - Key: 26
+10:30:59 - <-------------------------------------------------------->
+10:30:59 - Virtual file with the path: aaa
+10:30:59 - Virtual file with the path: aaa/bbb
+10:30:59 - Virtual file with the path: aaa/ccc
+10:30:59 - Virtual file with the path: aaa/kkk/hhh
+10:30:59 - Virtual file with the path: aaa/kkk
+10:30:59 - Virtual file with the path: aaa/zvvxcvvcxvf
+10:30:59 - <-------------------------------------------------------->
+10:30:59 - File with the path aaa has been added to this virtual file repository.
+10:30:59 - Pausing for 10000 ms
+10:31:09 - Predecessor chord id: 48
+10:31:09 - My chord id: 28
+10:31:09 - Key: 26
+10:31:09 - <-------------------------------------------------------->
+10:31:09 - Virtual file with the path: aaa
+10:31:09 - Virtual file with the path: aaa/bbb
+10:31:09 - Virtual file with the path: aaa/ccc
+10:31:09 - Virtual file with the path: aaa/kkk
+10:31:09 - Virtual file with the path: aaa/zvvxcvvcxvf
+10:31:09 - <-------------------------------------------------------->
+10:31:09 - File with the path aaa/kkk/hhh has been removed from this virtual file repository.
+10:31:09 - Pausing for 5000 ms
+10:31:15 - Sending message [28|1100|2||QUIT|1200|48]
+10:31:16 - Got message [28|1100|2||QUIT|1100|28]
+10:31:16 - Emptying the working directory and stopping ...

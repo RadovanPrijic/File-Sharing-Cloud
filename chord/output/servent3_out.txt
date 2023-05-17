@@ -1,0 +1,3 @@
+02:05:07 - Starting servent [24|localhost|1400]
+02:05:07 - Pausing for 40000 ms
+02:05:47 - Emptying the working directory and stopping ...
