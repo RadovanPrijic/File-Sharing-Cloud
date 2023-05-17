@@ -1,10 +1,14 @@
 package virtual_filesys;
 
 import app.AppConfig;
-import org.apache.commons.io.FileUtils;
+//import org.apache.commons.io.FileUtils;
 import servent.message.MessageType;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -30,10 +34,10 @@ public class VirtualFileRepository {
     }
 
     public static void printVirtualFilesMap(){
-        AppConfig.timestampedStandardPrint("<-------------------------------------------------------->");
+        AppConfig.timestampedStandardPrint("<----- Virtual file system of this node ----->");
         for (Map.Entry<String, VirtualFile> entry : virtualFilesMap.entrySet())
             AppConfig.timestampedStandardPrint("Virtual file with the path: " + entry.getKey());
-        AppConfig.timestampedStandardPrint("<-------------------------------------------------------->");
+        AppConfig.timestampedStandardPrint("<-------------------------------------------->");
     }
 
     static void saveFile(VirtualFile originalFile) {
@@ -44,7 +48,7 @@ public class VirtualFileRepository {
                 if (file.isDirectory())
                     saveFile(file);
                 else
-                    virtualFilesMap.put(file.getFilePath(), originalFile);
+                    virtualFilesMap.put(file.getFilePath(), file);
             }
         } else
             virtualFilesMap.put(originalFile.getFilePath(), originalFile);
@@ -70,7 +74,7 @@ public class VirtualFileRepository {
             }
             for (String path : pathHashSet) {
                 virtualFilesMap.remove(path);
-            } //TODO Mozda i nije potrebno ovo sa hash setom
+            }
         } else
             virtualFilesMap.remove(filePath);
 
@@ -107,7 +111,7 @@ public class VirtualFileRepository {
                 }
                 else {
                     try {
-                        virtualFile = new VirtualFile(filePath + "/" + f.getName(), false, /*FileUtils.readFileToByteArray(f)*/ null);
+                        virtualFile = new VirtualFile(filePath + "/" + f.getName(), false, readFileToBytes(f));
                         dirFiles.add(virtualFile);
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -119,7 +123,7 @@ public class VirtualFileRepository {
         }
         else {
             try {
-                virtualFile = new VirtualFile(filePath, false, /*FileUtils.readFileToByteArray(file)*/ null);
+                virtualFile = new VirtualFile(filePath, false, readFileToBytes(file));
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -133,5 +137,20 @@ public class VirtualFileRepository {
 
     public static void setVirtualFilesMap(Map<String, VirtualFile> virtualFilesMap) {
         VirtualFileRepository.virtualFilesMap = virtualFilesMap;
+    }
+
+    private static byte[] readFileToBytes(File file) throws IOException {
+        byte[] bytes = new byte[(int) file.length()];
+
+        FileInputStream fis = null;
+        try {
+            fis = new FileInputStream(file);
+            fis.read(bytes);
+        } finally {
+            if (fis != null) {
+                fis.close();
+            }
+        }
+        return bytes;
     }
 }

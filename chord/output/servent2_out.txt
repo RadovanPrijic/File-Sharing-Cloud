@@ -1,0 +1,18 @@
+14:13:20 - Starting servent [4|localhost|1300]
+14:13:20 - Pausing for 40000 ms
+14:13:21 - Sending message [4|1300|0||NEW_NODE|1100|28]
+14:13:23 - Got message [28|1100|2||WELCOME|1300|4]
+14:13:24 - Sending message [4|1300|1||UPDATE|1100|28]
+14:13:25 - Got message [4|1300|2|1100,1200|UPDATE|1300|4]
+14:13:46 - Got message [48|1200|3||PULL_ASK|1300|4]
+14:13:47 - Sending message [48|1200|2||PULL_ASK|1100|28]
+14:14:00 - REMOVE command | File path: aaa/bbb | File name: bbb | File hash: 26
+14:14:00 - Pausing for 20000 ms
+14:14:01 - Sending message [4|1300|3||REMOVE|1100|28]
+14:14:12 - Got message [28|1100|4||QUIT|1300|4]
+14:14:12 - Sending message [28|1100|4||QUIT|1100|28]
+14:14:20 - <----- WE IN THE QUIT COMMAND BAYBEEEEY ----->
+14:14:20 - <-------------------------------------------->
+14:14:21 - Sending message [4|1300|5||QUIT|1200|48]
+14:14:22 - Got message [4|1300|5||QUIT|1300|4]
+14:14:22 - Emptying the working directory and stopping ...

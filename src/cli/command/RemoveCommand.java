@@ -23,16 +23,17 @@ public class RemoveCommand implements CLICommand{
             return;
         }
 
-        String fileName = args;
-        int idx = args.indexOf("/");
+        String fileName = args, forHash = args;
+        int firstOccurrence = args.indexOf("/");
+        int lastOccurrence = args.lastIndexOf("/");
 
-        if (idx >= 0) {
-            fileName = args.substring(0, idx);
-//            System.out.println(args + " : " + fileName);
+        if (firstOccurrence >= 0) {
+            forHash = args.substring(0, firstOccurrence);
+            fileName = args.substring(lastOccurrence + 1, fileName.length());
         }
 
-        int fileHash = ChordState.fileHash(fileName);
-//        System.out.println(fileName + " hash = " + fileNameHash);
+        int fileHash = ChordState.fileHash(forHash);
+        AppConfig.timestampedStandardPrint("REMOVE command" + " | File path: " + args + " | File name: " + fileName + " | File hash: " + fileHash);
 
         if (AppConfig.chordState.isKeyMine(fileHash)) {
             VirtualFile fileToRemove = VirtualFileRepository.virtualFilesMap.get(args);

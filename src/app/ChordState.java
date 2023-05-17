@@ -37,6 +37,7 @@ import java.util.Map;
 public class ChordState {
 
 	public static int CHORD_SIZE;
+
 	public static int chordHash(int value) {
 		return 61 * value % CHORD_SIZE;
 	}

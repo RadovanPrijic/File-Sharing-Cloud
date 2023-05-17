@@ -1,2 +1,4 @@
 pause 40000
+remove aaa/bbb
+pause 20000
 quit
