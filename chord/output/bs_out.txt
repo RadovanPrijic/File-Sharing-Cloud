@@ -1,5 +1,0 @@
-10:37:33 - Bootstrap server started on port: 2000
-Got localhost:1100
-Got localhost:1200
-10:37:47 - Adding localhost:1200
-10:38:18 - Servent localhost : 1200 has been removed.

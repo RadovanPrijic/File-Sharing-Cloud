@@ -75,8 +75,8 @@ public class BootstrapServer {
 				if (message.equals("Hail")) {
 					String newServentIp = socketScanner.nextLine();
 					int newServentPort = socketScanner.nextInt();
-					
-					System.out.println("Got " + newServentIp + ":" + newServentPort);
+
+					AppConfig.timestampedStandardPrint("Got " + newServentIp + ":" + newServentPort);
 					PrintWriter socketWriter = new PrintWriter(newServentSocket.getOutputStream());
 					
 					if (activeServents.size() == 0) {

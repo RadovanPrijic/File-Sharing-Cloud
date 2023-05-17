@@ -1,7 +1,7 @@
 package virtual_filesys;
 
 import app.AppConfig;
-//import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.FileUtils;
 import servent.message.MessageType;
 
 import java.io.File;
@@ -107,8 +107,7 @@ public class VirtualFileRepository {
                 }
                 else {
                     try {
-                        virtualFile = new VirtualFile(filePath + "/" + f.getName(), false,
-                                /*FileUtils.readFileToByteArray(f)*/ null);
+                        virtualFile = new VirtualFile(filePath + "/" + f.getName(), false, /*FileUtils.readFileToByteArray(f)*/ null);
                         dirFiles.add(virtualFile);
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -120,8 +119,7 @@ public class VirtualFileRepository {
         }
         else {
             try {
-                virtualFile = new VirtualFile(filePath, false,
-                        /*FileUtils.readFileToByteArray(file)*/ null);
+                virtualFile = new VirtualFile(filePath, false, /*FileUtils.readFileToByteArray(file)*/ null);
             } catch (Exception e) {
                 e.printStackTrace();
             }
