@@ -145,16 +145,11 @@ public class ChordState {
 	 */
 	public boolean isKeyMine(int key) {
 		if (predecessorInfo == null) {
-			AppConfig.timestampedStandardPrint("HEFE gde si bre");
 			return true;
 		}
 		
 		int predecessorChordId = predecessorInfo.getChordId();
 		int myChordId = AppConfig.myServentInfo.getChordId();
-
-		AppConfig.timestampedStandardPrint("Predecessor chord id: " + predecessorChordId);
-		AppConfig.timestampedStandardPrint("My chord id: " + myChordId);
-		AppConfig.timestampedStandardPrint("Key: " + key);
 		
 		if (predecessorChordId < myChordId) { //no overflow
 			if (key <= myChordId && key > predecessorChordId) {

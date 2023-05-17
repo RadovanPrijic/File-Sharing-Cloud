@@ -1,5 +1,5 @@
-10:31:15 - File with the path aaa/bbb already exists in this virtual file repository and could therefore not be added.
-10:31:15 - File with the path aaa/ccc already exists in this virtual file repository and could therefore not be added.
-10:31:15 - File with the path aaa/kkk already exists in this virtual file repository and could therefore not be added.
-10:31:15 - File with the path aaa/zvvxcvvcxvf already exists in this virtual file repository and could therefore not be added.
-10:31:19 - Try adding the file with the path hahhaa instead of pulling it.
+10:38:15 - Try adding the file with the path hahhaa instead of pulling it.
+Exception in thread "Thread-1" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
+	at cli.CLIParser.run(CLIParser.java:54)
+	at java.base/java.lang.Thread.run(Thread.java:833)

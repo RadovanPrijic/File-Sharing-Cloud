@@ -33,7 +33,6 @@ public class PullCommand implements CLICommand{
 //        System.out.println(fileName + " hash = " + fileNameHash);
 
         if (AppConfig.chordState.isKeyMine(fileHash)) {
-            AppConfig.timestampedStandardPrint("HASH " + fileHash);
             AppConfig.timestampedErrorPrint("Try adding the file with the path " + args + " instead of pulling it.");
         } else {
             ServentInfo nextServentInfo = AppConfig.chordState.getNextNodeForKey(fileHash);
