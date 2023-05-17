@@ -36,8 +36,9 @@ public class QuitHandler implements MessageHandler{
                     for (Map.Entry<String, VirtualFile> entryMap : quitMsg.getValues().entrySet()) {
                         String filePath = entryMap.getKey();
                         VirtualFile virtualFile = entryMap.getValue();
-                        VirtualFileRepository.addFileToVirtualFileSystem(MessageType.ADD, virtualFile, filePath);
+                        VirtualFileRepository.addFileToVirtualFileSystem(MessageType.QUIT, virtualFile, filePath);
                     }
+                    VirtualFileRepository.printVirtualFilesMap();
                 }
                 String nextNodeIp = AppConfig.chordState.getNextNodeIp();
                 int nextNodePort = AppConfig.chordState.getNextNodePort();

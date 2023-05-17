@@ -29,6 +29,12 @@ public class VirtualFileRepository {
             saveFile(file);
             printVirtualFilesMap();
             AppConfig.timestampedStandardPrint("File with the path " + filePath + " has been pulled to this virtual file repository.");
+        } else if (msgType == MessageType.QUIT) {
+            if (virtualFilesMap.get(filePath) != null) {
+                AppConfig.timestampedErrorPrint("File with the path " + filePath + " already exists in this virtual file repository and could therefore not be added.");
+                return false;
+            }
+            virtualFilesMap.put(filePath, file);
         }
         return true;
     }
