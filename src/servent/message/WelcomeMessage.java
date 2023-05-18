@@ -2,10 +2,12 @@ package servent.message;
 
 import virtual_filesys.VirtualFile;
 
+import java.io.Serial;
 import java.util.Map;
 
 public class WelcomeMessage extends BasicMessage {
 
+	@Serial
 	private static final long serialVersionUID = -8981406250652693908L;
 
 	private Map<String, VirtualFile> values;

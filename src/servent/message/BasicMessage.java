@@ -2,6 +2,7 @@ package servent.message;
 
 import app.ChordState;
 
+import java.io.Serial;
 import java.util.Objects;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -14,6 +15,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 public class BasicMessage implements Message {
 
+	@Serial
 	private static final long serialVersionUID = -9075856313609777945L;
 	private final MessageType type;
 	private final String senderIp;
