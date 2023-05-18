@@ -1,9 +1,9 @@
-14:12:58 - Bootstrap server started on port: 2000
-14:13:00 - Got localhost:1100
-14:13:10 - Got localhost:1200
-14:13:13 - Adding localhost:1200
-14:13:20 - Got localhost:1300
-14:13:23 - Adding localhost:1300
-14:14:12 - Servent localhost : 1100 has been removed.
-14:14:22 - Servent localhost : 1300 has been removed.
-14:14:25 - Servent localhost : 1200 has been removed.
+20:48:29 - Bootstrap server started on port: 2000
+20:48:31 - Got localhost:1100
+20:48:41 - Got localhost:1200
+20:48:43 - Adding localhost:1200
+20:48:51 - Got localhost:1300
+20:48:54 - Adding localhost:1300
+20:49:43 - Servent localhost : 1100 has been removed.
+20:49:52 - Servent localhost : 1300 has been removed.
+20:49:56 - Servent localhost : 1200 has been removed.

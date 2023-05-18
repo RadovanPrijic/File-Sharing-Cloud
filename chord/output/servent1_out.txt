@@ -1,37 +1,37 @@
-14:13:10 - Starting servent [48|localhost|1200]
-14:13:10 - Pausing for 35000 ms
-14:13:12 - Sending message [48|1200|0||NEW_NODE|1100|28]
-14:13:13 - Got message [28|1100|0||WELCOME|1200|48]
-14:13:14 - Sending message [48|1200|1||UPDATE|1100|28]
-14:13:16 - Got message [48|1200|1|1100|UPDATE|1200|48]
-14:13:24 - Got message [4|1300|3|1100|UPDATE|1200|48]
-14:13:25 - Sending message [4|1300|2|1100,1200|UPDATE|1300|4]
-14:13:45 - PULL command | File path: aaa/kkk/hhh | File name: hhh | File hash: 26
-14:13:45 - Pausing for 40000 ms
-14:13:46 - Sending message [48|1200|3||PULL_ASK|1300|4]
-14:13:49 - Got message [28|1100|4||PULL_TELL|1200|48]
-14:13:49 - <----- Virtual file system of this node ----->
-14:13:49 - Virtual file with the path: aaa/kkk/hhh
-14:13:49 - <-------------------------------------------->
-14:13:49 - File with the path aaa/kkk/hhh has been pulled to this virtual file repository.
-14:14:11 - Got message [28|1100|5||QUIT|1200|48]
-14:14:11 - Adding files of quiting node [localhost|1100] to my virtual file repository.
-14:14:11 - Evo nas u for-u, ovo je kljuc: aaa
-14:14:11 - <----- Virtual file system of this node ----->
-14:14:11 - Virtual file with the path: aaa
-14:14:11 - Virtual file with the path: aaa/bbb
-14:14:11 - Virtual file with the path: aaa/ccc
-14:14:11 - Virtual file with the path: aaa/kkk/hhh
-14:14:11 - Virtual file with the path: aaa/kkk
-14:14:11 - Virtual file with the path: aaa/zvvxcvvcxvf
-14:14:11 - <-------------------------------------------->
-14:14:11 - File with the path aaa has been added to this virtual file repository.
-14:14:11 - Evo nas u for-u, ovo je kljuc: aaa/kkk/hhh
-14:14:11 - Evo nas u for-u, ovo je kljuc: aaa/ccc
-14:14:11 - Evo nas u for-u, ovo je kljuc: aaa/kkk
-14:14:11 - Evo nas u for-u, ovo je kljuc: aaa/zvvxcvvcxvf
-14:14:12 - Sending message [28|1100|4||QUIT|1300|4]
-14:14:21 - Got message [4|1300|5||QUIT|1200|48]
-14:14:21 - Adding files of quiting node [localhost|1300] to my virtual file repository.
-14:14:22 - Sending message [4|1300|5||QUIT|1300|4]
-14:14:25 - Emptying the working directory and stopping ...
+20:48:41 - Starting servent [48|localhost|1200]
+20:48:41 - Pausing for 35000 ms
+20:48:42 - Sending message [48|1200|0||NEW_NODE|1100|28]
+20:48:43 - Got message [28|1100|0||WELCOME|1200|48]
+20:48:44 - Sending message [48|1200|1||UPDATE|1100|28]
+20:48:45 - Got message [48|1200|1|1100|UPDATE|1200|48]
+20:48:52 - Got message [4|1300|0||NEW_NODE|1200|48]
+20:48:53 - Sending message [4|1300|2||NEW_NODE|1100|28]
+20:48:56 - Got message [4|1300|3|1100|UPDATE|1200|48]
+20:48:57 - Sending message [4|1300|3|1100,1200|UPDATE|1300|4]
+20:49:16 - PULL command | File path: aaa/kkk/hhh | File name: hhh | File hash: 26
+20:49:16 - Pausing for 40000 ms
+20:49:16 - Sending message [48|1200|4||PULL_ASK|1300|4]
+20:49:19 - Got message [28|1100|4||PULL_TELL|1200|48]
+20:49:19 - <----- Virtual file system of this node ----->
+20:49:19 - Virtual file with the path: aaa/kkk/hhh
+20:49:19 - <-------------------------------------------->
+20:49:19 - File with the path aaa/kkk/hhh has been pulled to this virtual file repository.
+20:49:42 - Got message [28|1100|5||QUIT|1200|48]
+20:49:42 - <----- Virtual file system of this node ----->
+20:49:42 - Virtual file with the path: aaa
+20:49:42 - Virtual file with the path: aaa/ccc
+20:49:42 - Virtual file with the path: aaa/kkk/hhh
+20:49:42 - Virtual file with the path: aaa/kkk
+20:49:42 - Virtual file with the path: aaa/zvvxcvvcxvf
+20:49:42 - <-------------------------------------------->
+20:49:43 - Sending message [28|1100|5||QUIT|1300|4]
+20:49:52 - Got message [4|1300|5||QUIT|1200|48]
+20:49:52 - <----- Virtual file system of this node ----->
+20:49:52 - Virtual file with the path: aaa
+20:49:52 - Virtual file with the path: aaa/ccc
+20:49:52 - Virtual file with the path: aaa/kkk/hhh
+20:49:52 - Virtual file with the path: aaa/kkk
+20:49:52 - Virtual file with the path: aaa/zvvxcvvcxvf
+20:49:52 - <-------------------------------------------->
+20:49:52 - Sending message [4|1300|6||QUIT|1300|4]
+20:49:56 - Emptying the working directory and stopping ...

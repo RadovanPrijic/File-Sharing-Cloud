@@ -1,18 +1,16 @@
-14:13:20 - Starting servent [4|localhost|1300]
-14:13:20 - Pausing for 40000 ms
-14:13:21 - Sending message [4|1300|0||NEW_NODE|1100|28]
-14:13:23 - Got message [28|1100|2||WELCOME|1300|4]
-14:13:24 - Sending message [4|1300|1||UPDATE|1100|28]
-14:13:25 - Got message [4|1300|2|1100,1200|UPDATE|1300|4]
-14:13:46 - Got message [48|1200|3||PULL_ASK|1300|4]
-14:13:47 - Sending message [48|1200|2||PULL_ASK|1100|28]
-14:14:00 - REMOVE command | File path: aaa/bbb | File name: bbb | File hash: 26
-14:14:00 - Pausing for 20000 ms
-14:14:01 - Sending message [4|1300|3||REMOVE|1100|28]
-14:14:12 - Got message [28|1100|4||QUIT|1300|4]
-14:14:12 - Sending message [28|1100|4||QUIT|1100|28]
-14:14:20 - <----- WE IN THE QUIT COMMAND BAYBEEEEY ----->
-14:14:20 - <-------------------------------------------->
-14:14:21 - Sending message [4|1300|5||QUIT|1200|48]
-14:14:22 - Got message [4|1300|5||QUIT|1300|4]
-14:14:22 - Emptying the working directory and stopping ...
+20:48:51 - Starting servent [4|localhost|1300]
+20:48:51 - Pausing for 40000 ms
+20:48:52 - Sending message [4|1300|0||NEW_NODE|1200|48]
+20:48:54 - Got message [28|1100|2||WELCOME|1300|4]
+20:48:56 - Sending message [4|1300|1||UPDATE|1100|28]
+20:48:57 - Got message [4|1300|3|1100,1200|UPDATE|1300|4]
+20:49:16 - Got message [48|1200|4||PULL_ASK|1300|4]
+20:49:17 - Sending message [48|1200|2||PULL_ASK|1100|28]
+20:49:31 - REMOVE command | File path: aaa/bbb | File name: bbb | File hash: 26
+20:49:31 - Pausing for 20000 ms
+20:49:32 - Sending message [4|1300|3||REMOVE|1100|28]
+20:49:43 - Got message [28|1100|5||QUIT|1300|4]
+20:49:43 - Sending message [28|1100|4||QUIT|1100|28]
+20:49:51 - Sending message [4|1300|5||QUIT|1200|48]
+20:49:52 - Got message [4|1300|6||QUIT|1300|4]
+20:49:52 - Emptying the working directory and stopping ...
